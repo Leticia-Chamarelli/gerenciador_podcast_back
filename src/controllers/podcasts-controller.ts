@@ -5,7 +5,11 @@ export const getlistEspiodes = async (
     res: ServerResponse
 ) => {
     res.writeHead(200,{'content-type': "application/json"});
-    res.end({
-        name: "Letícia",
-    });
+    res.end(JSON.stringify({
+        podcastName: "Flow",
+        episode: "CBUM - Flow #319",
+        videoId: "pQSuQmUfS30&pp",
+        category: ["saúde", "bodybuilder", "esporte"]
+    })
+);
 };
